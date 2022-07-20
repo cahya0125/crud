@@ -1,5 +1,5 @@
 <?php
-// use App\Http\Controller\SiswaController;
+use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('siswa', App\Http\Controllers\SiswaController::class);
-// Route::resource('siswa','App\Http\Controllers\SiswaController@index');
+Route::resource('siswa',SiswaController::class);
+//  Route::resource('siswa','App\Http\Controllers\SiswaController@index');
