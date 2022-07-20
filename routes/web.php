@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\BarangController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,5 @@ Auth::routes();
  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('siswa',SiswaController::class);
+Route::resource('toko',BarangController::class);
 //  Route::resource('siswa','App\Http\Controllers\SiswaController@index');
